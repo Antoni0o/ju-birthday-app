@@ -1,8 +1,9 @@
-import './App.css';
+import { BirthdayIsNotToday } from './pages/BirthdayIsNotToday';
+import './styles/Globals.css'
 
 function App() {
   return (
-    <h1>Hello, World!</h1>
+    <BirthdayIsNotToday/>
   );
 }
 
