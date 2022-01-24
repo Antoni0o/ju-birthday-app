@@ -10,9 +10,11 @@ export const Timer = () => {
   const [timerHours, setTimerHours] = useState('00');
   const [timerMinutes, setTimerMinutes] = useState('00');
   const [timerSeconds, setTimerSeconds] = useState('00');
+  const [birthdayYear, setBirthdayYear] = useState('2022');
 
   useEffect(() => {
     const birthdayYear = dayjs().year();
+    setBirthdayYear(String(birthdayYear));
     const birthdayDate = dayjs(`11/22/${birthdayYear}`).utc(true).toDate();
 
     const interval = setInterval(() => {
@@ -59,6 +61,7 @@ export const Timer = () => {
       </div>
       <hr />
       <h3>Para o aniversário da Ju</h3>
+      <h3>22/11/{birthdayYear}</h3>
     </TimeWrapper>
   );
 };
