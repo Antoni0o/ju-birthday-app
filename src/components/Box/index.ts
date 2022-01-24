@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Box = styled.div`
+  width: 80%;
   padding: 5%;
   display: flex;
   flex-direction: column;
@@ -12,6 +13,7 @@ export const Box = styled.div`
   -webkit-backdrop-filter: blur( 4px );
   border-radius: 10px;
   @media(max-width: 1024px) {
+    width: 90%;
     padding: 10%;
   }
 `
