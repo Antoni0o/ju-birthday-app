@@ -12,6 +12,7 @@ import Bg10 from '../img/bg10.jpg';
 import { Box } from "../components/Box";
 import { ContentWrapper } from "../components/ContentWrapper";
 import { Headers } from "../components/Headers"
+import { Timer } from '../components/Timer';
 
 export const BirthdayIsNotToday = () => {
   const sortRandomNumber = () => {
@@ -36,6 +37,8 @@ export const BirthdayIsNotToday = () => {
    <ContentWrapper BackgroundIMG={Background[sortRandomNumber()]} >
      <Box>
       <Headers/>
+      <hr />
+      <Timer/>
      </Box>
    </ContentWrapper>
  ); 

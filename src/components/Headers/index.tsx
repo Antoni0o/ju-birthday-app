@@ -1,10 +1,10 @@
 
-import { Header } from "./Headers.styles";
+import { HeadersWrapper } from "./Headers.styles";
 
 export const Headers = () => {
   return (
-    <Header>
+    <HeadersWrapper>
       <h1>Ju's Birthday App</h1>
-    </Header>
+    </HeadersWrapper>
   );
 };

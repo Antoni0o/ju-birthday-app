@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { theme } from "../../theme";
 
-export const Header = styled.div`
+export const HeadersWrapper = styled.div`
   h1 {
     font-family: 'Great Vibes', cursive;
     font-size: ${theme.fontSize.xxl};
