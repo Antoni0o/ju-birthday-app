@@ -12,12 +12,14 @@ import Bg11 from '../img/bg11.jpg';
 import Bg12 from '../img/bg12.jpg'; 
 import Bg13 from '../img/bg13.jpg'; 
 
+import dayjs from 'dayjs';
 import { Box } from "../components/Box";
 import { ContentWrapper } from "../components/ContentWrapper";
 import { Headers } from "../components/Headers"
-import { Timer } from '../components/Timer';
 
-export const BirthdayIsNotToday = () => {
+export const BirthdayIsToday = () => {
+  const currentYear = dayjs().year();
+
   const sortRandomNumber = () => {
     const number = Math.floor(Math.random() * Background.length);
     return number;
@@ -44,7 +46,10 @@ export const BirthdayIsNotToday = () => {
      <Box>
       <Headers/>
       <hr />
-      <Timer/>
+      <h1>FELIZ ANIVERSÁRIO JU!</h1>
+      <hr />
+      <h3>Hoje é o aniversário da Ju</h3>
+      <h3>22/11/{currentYear}</h3>
      </Box>
    </ContentWrapper>
  ); 

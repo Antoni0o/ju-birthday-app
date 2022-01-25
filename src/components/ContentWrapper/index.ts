@@ -15,9 +15,32 @@ export const ContentWrapper = styled.main<ContainerProps>`
   background-size: cover;
   background-position: 20%;
   height: 100vh;
+  h1:nth-child(3) {
+    font-family: 'Poppins', sans-serif;
+    font-size: ${theme.fontSize.l};
+    color: ${theme.colors.white};
+    text-shadow: -1px 0px 5px rgba(94, 94, 94, 1);
+  }
+  h3 {
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: ${theme.fontSize.m};
+    color: ${theme.colors.white};
+    text-shadow: -1px 0px 5px rgba(94, 94, 94, 1);
+    @media(max-width: 1024px) {
+      text-align: center;
+    }
+  }
+  h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: ${theme.fontSize.l};
+    font-weight: 400;
+    color: ${theme.colors.white};
+    text-shadow: -1px 0px 5px rgba(94, 94, 94, 1);
+  }
   hr {
-    width: 50%;
-    margin-bottom: 2rem;
+    width: 40%;
+    margin-bottom: 1rem;
 
     color: ${theme.colors.white};
     border: 1px solid ${theme.colors.white};
